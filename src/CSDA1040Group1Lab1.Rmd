@@ -155,8 +155,9 @@ We chose to evaluate the MovieLens Dataset on Kaggle which contains 45,000 movie
 Load the datasets into R
 
 ```{r}
-movies <- read.csv("movies_metadata.csv")
-ratings <- read.csv("ratings_small.csv")
+library(readr)
+movies <- read_csv("C:/Users/User/Documents/YorkU/YorkU-ML/recSys-model-netflix/data/movies_metadata.csv")
+ratings <- read_csv("C:/Users/User/Documents/YorkU/YorkU-ML/recSys-model-netflix/data/ratings_small.csv")
 ```
 
 
@@ -221,7 +222,6 @@ Highest Budget Movies
 
 ```{r}
 library(tidyverse)
-movies$budget=as.numeric(levels(movies$budget))[movies$budget]
 movies %>% select(title,budget) %>% drop_na(title)%>% arrange(desc(budget)) %>% head(10) %>%  ggplot(aes(reorder(title,budget),budget,fill=title))+geom_bar(stat="identity")+theme(axis.text.x = element_text(angle=90),plot.title=element_text(color="red",face="italic"),legend.position="none")+scale_y_continuous(labels=scales::comma)+labs(x="",y="Total Budget in $",title="Top 10 Most Expensive Movies")
 ```
 
@@ -539,7 +539,7 @@ But first let's convert the id column in the movies dataset and also the movieId
 
 ```{r}
 movies$id <- as.integer(movies$id)
-recc_predicted$movieId <- as.integer(levels(recc_predicted$movieId))
+recc_predicted$movieId <- as.integer(recc_predicted$movieId)
 ```
 
 ```{r}
@@ -603,7 +603,7 @@ recc_predicted2
 Convert movieId2 column in the recc_predicted2 dataframe into an integer.
 
 ```{r}
-recc_predicted2$movieId2 <- as.integer(levels(recc_predicted2$movieId2))
+recc_predicted2$movieId2 <- as.integer(recc_predicted2$movieId2)
 ```
 
 Take first user movieId2 recommendations and merge it with the id in the movies dataset to get the movie titles.
@@ -658,7 +658,7 @@ recc_predicted3
 Convert movieId3 column in the recc_predicted3 dataframe into an integer.
 
 ```{r}
-recc_predicted3$movieId3 <- as.integer(levels(recc_predicted3$movieId3))
+recc_predicted3$movieId3 <- as.integer(recc_predicted3$movieId3)
 ```
 
 
