@@ -11,16 +11,16 @@ Business Objective
 
 Background:
 
-The modern consumer has been shaped and changed over-time by our ever advancing technologically apt society. A consumer can be defined as an individual or organization that purchases or uses the services or commodities. Rather than engaging in thorough and time-invested activities to find that ‘one’ item or service, the consumer today has a plethora of personalized and targeted content on hand. Whether they are pressed on time, shopping and browsing on-the-go, or logging in from multiple devices, companies and brands have managed to deliver rapid and on-point offers to capture interest in a competitive economy. Brands delivering rapid, on-point offers capture the most benefits. Segment, a customer data infrastructure company, found in their 2017 report that personalization drives revenue, loyalty, and increased interactions with the company.(Segment,2017)
+The modern consumer has been shaped and changed over-time by our ever-advancing technologically apt society. A consumer can be defined as an individual or organization that purchases or uses the services or commodities; rather than engaging in thorough and time-invested activities to find that ‘one’ item or service, the consumer today has a plethora of personalized and targeted content on hand. Whether they are pressed on time, shopping and browsing on-the-go, or logging in from multiple devices, companies and brands have managed to deliver rapid and on-point offers to capture interest in a competitive economy. Brands providing rapid, on-point recommendations capture the most benefits. Segment, a customer data infrastructure company, found in their 2017 report that personalization drives revenue, loyalty, and increased interactions with the company. (Segment,2017)
 
 Machine learning systems allow the capture of vital consumer data, manipulate into meaningful insights, and display the best recommendations for users. Some examples include; highlighting different versions of your store homepage or product marketing material to different customer segments, pinpoint which inventory to showcase, scan through the product catalogue and line up the best products and even recommend the nearest locations or sites they can make the purchase, and smart systems can even capture browsing data then later target the prospect with ads.
 
-Movie4You is an app founded in May 2015 with headquarters located in Toronto, Ontario where users can watch movies and TV shows online or stream to their smart TV, PC, mobile and tablet. They last updated their movie database in July 2017 where a wide selection of movies and TV shows can be found across several genres. In the first year of operation they had 600,000 paid subcribers but at the end of the second year, they only had 400,000 paid subscribers.
+Movie4You is an app founded in May 2015 with headquarters in Toronto, Ontario, where users can watch movies and TV shows online or stream to their smart TV, PC, mobile and tablet. They last updated their movie database in July 2017, where a wide selection of movies and TV shows can be found across several genres. In the first year of operation, they had 600,000 paid subscribers, but at the end of the second year, they only had 400,000 paid subscribers.
 
 
 Business Objective:
 
-The marketing department of Movie4You has determined that although having a large database of movies and TV shows, users do not know what they should watch next and eventually end their subcriptions.Group 1 has been retained to help Movie4You to develop a recommendation system to predict movies for a user based on their preferences and deploy it in a user-friendly interface. 
+The marketing department of Movie4You has determined that although having an extensive database of movies and TV shows, users do not know what they should watch next and eventually end their subscriptions. Group 1 has been retained to help Movie4You develop a recommendation system to predict movies for users based on their preferences and deploy it in a user-friendly interface. 
 
 
 Business Success Criteria:
@@ -60,22 +60,20 @@ Business Success Criteria:
 
 Proposed drivers and relationships to inputs:
 
-To aid in the development and testing of our model, we anticipate the input variables ratings, userId, movieId and movie titles to have an effect on the otcome of our model.
-
+To aid in developing and testing our model, we anticipate the input variables ratings, userId, movieId and movie titles to affect the outcome of our model.
 
 Output:
 
-There are two ways to measure our model’s ability to generate movie outputs, retention and engagement. One core benefit of a recommendation system is to calibrate to the preferences of the user, known as “improving with use”. For example, Netflix competitors would deal with the challenge of attracting their customer base due to the obstacle of Netflix already ‘knowing them well’ by retaining the user preference. For a streaming service whose revenue relies largely on the fixed-rate billing subscription model, it is important that the user is comfortable in their personalized content space.
+There are two ways to measure our model's ability to generate movie outputs, retention and engagement. One core benefit of a recommendation system is to calibrate the user's preferences, known as "improving with use." For example, Netflix competitors would deal with the challenge of attracting their customer base due to Netflix's already 'knowing them well' by retaining the user preference. For a streaming service whose revenue relies mainly on the fixed-rate billing subscription model, users must be comfortable in their personalized content space.
 
-The second measure is engagement. Simply encouraging activity on our platform can allow our product to gain attention and allow opening of revenue generating streams such as advertisement opportunities. A good example of such practices being employed are by the ever popular, YouTube and Facebook. Search engine results page are good places for advertisers to place their content. The movie recommendations that our product will make should encourage users to return to the page and recommend our application to others. Deploying such a tool in a browser or blog page can allow advertisers to place targeted ads.
+The second measure is engagement. Simply encouraging activity on our platform can allow our product to gain attention and permit the opening of revenue-generating streams such as advertisement opportunities. An excellent example of such practices being employed is by the ever-popular YouTube and Facebook. The search engine results page is the right place for advertisers to place their content. Our product's movie recommendations should encourage users to return to the page and recommend our application to others. Deploying such a tool in a browser or blog page can allow advertisers to place targeted ads.
 
 
 Assumptions:
 
 1. It’s important to note that our recommendation system will likely only work with enough data, dependent on the dataset after cleaning. 
 
-2. For a collaborative filtering model, we would need the input of many other users in the form of ratings to identify a good movie prediction. 
-
+2. For a collaborative filtering model, we would need the input of many other users in the form of ratings to identify the right movie prediction. 
 
 ## Ethical Machine Learning Framework
 
@@ -83,81 +81,81 @@ Problem Definition and Scope
 
 Map current business process:
 
-Our system adds value in the addition stage of the process. The user would manually search for movies that they would enjoy watching by self-filtration of preferences such as genre or highest rated movies. However, we can turn this into a funnel type flow. An amalgamation of the user, highest movie ratings, and a dataset churns a movie recommendation depending on the machine leaning model set in place. This removes the user’s manual work and in advanced applications can make them part of the automatic system (such as human-in-the-loop systems).
+Our system adds value to the addition stage of the process. The user would manually search for movies that they would enjoy watching by self-filtration of preferences such as genre or highest rated movies. However, we can turn this into a funnel type flow. An amalgamation of the user, highest movie ratings, and a dataset churns a movie recommendation depending on the machine learning model set in place. This removes the user's manual work and, in advanced applications, can make them part of the automatic system (such as human-in-the-loop systems).
   
 
 Inputs, Outputs, Optimization, and Baseline Performance:
 
-This recommender system, regardless of model type, will look at the group of movies defined by Id number and the associated ratings. For our matrix, we only considered who have rated at least 30 movies and movies that have been viewed at least 40 times. As an output, we determine the top five movie recommendations for each new user. The goal is to find the best recommendations for the user by ensuring optimal data distribution in the train and test datasets. The baseline performance will be measured by the number of movies recommended. In this case, it should be 5.
+Regardless of model type, this recommender system will look at the group of movies defined by Id number and the associated ratings. We only considered who have rated at least 30 movies and movies that have been viewed at least 40 times for our matrix. As an output, we determine the top five movie recommendations for each new user. The goal is to find the best recommendations for the user by ensuring optimal data distribution in the train and test datasets. The baseline performance will be measured by the number of movies recommended. In this case, it should be 5.
 
 
 Risks and Ethics:
 
-Our system can negatively impact an individual if their movie recommendation is completely off the expectation that was already held with the product. For example, if a user has a certain set of genres in mind that they usually avoid watching and the recommendation list suggests a genre from such categories, they might not return to use the product. No one is left vulnerable by the application of our recommender system. We can accept one wrong recommendation per model. The list is generously large for a single run, outputting 5 movies. This gives room for one movie to be a ‘off-point suggestion’. The movies grouped by the ratings has the greatest influence on outputs rather than the genre of movies.
+Our system can negatively impact an individual if their movie recommendation is entirely off the expectations that were already held with the product. For example, if a user has a particular set of genres in mind, they usually avoid watching. The recommendation list suggests a genre from such categories; they might not return to use the product. No one is left vulnerable by the application of our recommender system. We can accept one wrong recommendation per model. The list is generously extensive for a single run, outputting five movies. This gives room for one movie to be an 'off-point suggestion.' The movies grouped by the ratings have the most significant influence on outputs rather than the genre of movies.
 
 
 Design
 
 The following is a snippet from contributor Rounak Banik on Kaggle.
-“These files contain metadata for all 45,000 movies listed in the Full MovieLens Dataset. The dataset consists of movies released on or before July 2017. Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages. This dataset also has files containing 26 million ratings from 270,000 users for all 45,000 movies. Ratings are on a scale of 1-5 and have been obtained from the official GroupLens website.”
+"These files contain metadata for all 45,000 movies listed in the Full MovieLens Dataset. The dataset consists of movies released on or before July 2017. Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages. This dataset also has files containing 26 million ratings from 270,000 users for all 45,000 movies. Ratings are on a scale of 1-5 and have been obtained from the official GroupLens website."
 In this case, the user ratings dataset size is 100,000 ratings from 700 users on 9,000 movies. Our design is a fully-automated system with static data that required an initial human interaction with the application to generate a recommendation.
 
 
 Derived insights, action and transparency: 
 
-The outputs, movie recommendations, will generate the following insights. For the user it will highlight some patterns in the recommended lists that are created after every click. This may lead the user to agree strongly with themselves the movies they prefer watching. For the developers, it can highlight some important characteristics of the recommendation system, such as feature selection and differences in models.
+The outputs, movie recommendations will generate the following insights. It will highlight some patterns in the recommended lists that are created after every click for the user. This may lead the user to agree strongly with themselves the movies they prefer watching. For the developers, it can highlight some important characteristics of the recommendation system, such as feature selection and differences in models.
 
-Our application highlights the dataset being used for the recommendation in the ‘About’ panel. This will indicate the selection of movies, ratings, and cutoff at around mid-year 2017. The dataset provided by MovieLens would have some biases in the user field. These were controlled in the data preparation set as much as possible to create an optimal training dataset. The movies were grouped by rating but some of the user biases in rating the movies remain in the underlayer.The movie recommendations are strictly available for the end user and developers to view. Our product does not loop in human input for recommendation, thus ensuring the safety of their data. The user will be aware upon launching the application that the system is a recommendation engine based on machine learning principles. Information is listed in the ‘About’ tab.
+Our application highlights the dataset being used for the recommendation in the 'About' panel. This will indicate the selection of movies, ratings, and cut off at around mid-year 2017. The dataset provided by MovieLens would have some biases in the user field. These were controlled in the data preparation set as much as possible to create an optimal training dataset. The movies were grouped by rating, but some user biases in rating the movies remain in the underlayer. The movie recommendations are strictly available for the end-user and developers to view. Our product does not loop in human input for the recommendation, thus ensuring their data's safety. The user will be aware of launching the application that the system is a recommendation engine based on machine learning principles. Information is listed in the 'About' tab.
 
 
 Data Collection and Retention
 
 Procurement and ethical questions:
 
-We have procured a single dataset only.No external expertise was obtained. Our models were trained and tested based on the features chosen by the developers that were deemed most appropriate given the dataset.The user field is de-identified and we have taken measures to solely include the ratings and movie titles in our models. Socially sensitive features do not influence output aside from the underlying user bias in the ratings dataset as discussed above.
+We have procured a single dataset only.No external expertise was obtained. Our models were trained and tested based on the developers' features deemed most appropriate, given the dataset. The user field is de-identified, and we have taken measures to include the ratings and movie titles in our models solely. As discussed above, socially sensitive features do not influence output aside from the underlying user bias in the ratings dataset.
 
 
 Data Processing 
 
-Model Protyping and Quality
+Model Prototyping and Quality
 
 The following three models were experimented with; User-Based Collaborative Filtering, Item-Based Collaborative Filtering, and Singular Value Decomposition.  
 
 Here are some further details on the three models;
 
 User-based collaborative filtering:
-No domain knowledge required and allows users to find new interests. However, it doesn’t address the  cold-start problem of a new user or item entering the system. Sparse data can make it difficult to find users that have rated the same items. It can’t deal with sparse data, meaning it’s hard to find users that have rated the same items and it tends to recommend popular items.
+No domain knowledge is required and allows users to find new interests. However, it doesn't address the cold-start problem of a new user or item entering the system. Sparse data can make it difficult to find users that have rated the same items. It can't deal with sparse data, meaning it's hard to find users that have rated the same items, and it tends to recommend popular items.
 
 Item-based collaborative filtering:
-Can recommend to users with unique tastes or new & unpopular items. It can further provide explanations for the recommended items by listing item-features that caused the recommendation. However, finding the appropriate features is difficult and it does not recommend items outside a user’s content profile.Unable to exploit quality judgments of other users and expand outside of the user's current interests.
+It can recommend to users with unique tastes or new & unpopular items. It can further provide explanations for the recommended items by listing item-features that caused the recommendation. However, finding the appropriate features is difficult, and it does not recommend items outside a user's content profile. Unable to exploit the quality judgments of other users and expand outside of the user's current interests.
 
 Singular Value Decomposition:
-In the context of recommendation systems SVD is used as a collaborative filtering algorithm. It is a technique that reduces the number of features of a dataset by reducing space dimensions.(Malaeb, 2016) This method is very efficient for large sparse matrixes. 
+In the context of recommendation systems, SVD is used as a collaborative filtering algorithm. It is a technique that reduces the number of features of a dataset by reducing space dimensions. (Malaeb, 2016) This method is very efficient for large sparse matrixes. 
 
-The dataset was split in the following way: 90% for training and 10% for testing to ensure the performance was not skewed beyond the training set. Our use case does not require a more intrepretable algorithm. We have included all three algorithms in the application for user knowledge. Further information about the algorithms can be found in the ‘About’ tab. The only underlying bias that can be malicious is the nature of the MovieLens dataset in procuring users for rating movies. This has been discussed above. The impact of it on the training data is reduced by implementing appropriate data sparsity in the rating matrix.
+The dataset was split in the following way: 90% for training and 10% for testing to ensure the performance was not skewed beyond the training set. Our use case does not require a more interpretable algorithm. We have included all three algorithms in the application for user knowledge. Further information about the algorithms can be found in the 'About' tab. The only underlying bias that can be malicious is the MovieLens dataset's nature in procuring users for rating movies. This has been discussed above. The impact of it on the training data is reduced by implementing appropriate data sparsity in the rating matrix.
 
 
 Deployment, Monitoring and Maintainance
 
-Completed in the form of a R shiny application. Systems design will ensure only authorized members are able to train the model through authentication and firewall security.
+They are completed in the form of an R shiny application. Systems design will ensure only authorized members can train the model through authentication and firewall security.
 
 
 Data Mining Objective
 
-The data mining goal is to create a recommendation model which can predict movies for an user/subscriber based on ratings they have provided for movies they watched. 
+The data mining goal is to create a recommendation model that can predict movies for users/subscribers based on ratings they have provided for movies they watched. 
 
 
 ## Data Understanding
 
-We chose to evaluate the MovieLens Dataset on Kaggle which contains 45,000 movies released on or before July, 2017. The dataset also includes a rating dataset where the ratings scale from 1-5 on 100,000 ratings from 700 users on 9,000 movies.This dataset is a combination of data collected from The Movie Database (TMDb) and GroupLens.The Ratings were collected from the official GroupLens website.
+We chose to evaluate the MovieLens Dataset on Kaggle, which contains 45,000 movies released on or before July 2017. The dataset also includes a rating dataset where the ratings scale from 1-5 on 100,000 ratings from 700 users on 9,000 movies. This dataset is a combination of data collected from The Movie Database (TMDb) and GroupLens. The Ratings were collected from the official GroupLens website.
 
 
 Load the datasets into R
 
 ```{r}
 library(readr)
-movies <- read_csv("C:/Users/User/Documents/YorkU/YorkU-ML/recSys-model-netflix/data/movies_metadata.csv")
-ratings <- read_csv("C:/Users/User/Documents/YorkU/YorkU-ML/recSys-model-netflix/data/ratings_small.csv")
+movies <- read_csv("movies_metadata.csv")
+ratings <- read_csv("ratings_small.csv")
 ```
 
 
@@ -225,17 +223,16 @@ library(tidyverse)
 movies %>% select(title,budget) %>% drop_na(title)%>% arrange(desc(budget)) %>% head(10) %>%  ggplot(aes(reorder(title,budget),budget,fill=title))+geom_bar(stat="identity")+theme(axis.text.x = element_text(angle=90),plot.title=element_text(color="red",face="italic"),legend.position="none")+scale_y_continuous(labels=scales::comma)+labs(x="",y="Total Budget in $",title="Top 10 Most Expensive Movies")
 ```
 
-The bargraph above shows the top 10 most expensive movies to make based on its budget. These movies were all made within the last 20 years which tells us that with advanced technology, movies are becoming more expensive. Also it is interesting to note that inflation was not taken into consideration here, just the cost to make that specific movie at that time.
+The bar graph above shows the top 10 most expensive movies to make based on its budget. These movies were all made within the last 20 years, which tells us that movies are becoming more costly with advanced technology. Also, it is interesting to note that inflation was not considered here, just the cost to make that specific movie at that time.
 
 
 Highest Revenue Movies
 
 ```{r}
-
 movies %>% select(original_title,revenue) %>% drop_na(original_title)%>% arrange(desc(revenue)) %>% head(10)  %>% ggplot(aes(reorder(original_title,revenue),revenue,fill=original_title))+geom_bar(stat="identity")+theme(axis.text.x = element_text(angle=90),plot.title=element_text(color="Red",face="italic"),legend.position="none")+scale_y_continuous(limits=c(0,3000000000),breaks=seq(0,3000000000,500000000),labels=scales::comma)+labs(x="",y="Total Revenue in $",title="Top 10 Highest Grossing Movies")
 ```
 
-The bargraph above shows the top 10 highest grossing movies based on its revenue acquired. These movies were all released in the last 25 years which shows that more people are going to the cinema now than before but we also didn't take into account inflation but just the amount of revenue that money acquired at that time.
+The bar graph above shows the top 10 highest-grossing movies based on its revenue acquired. These movies were all released in the last 25 years, which shows that more people are going to the cinema now than before, but we also didn't consider inflation but just the amount of revenue that money acquired at that time.
 
 
 Movie release month
@@ -245,7 +242,7 @@ movies$month=month.abb[as.factor(format(as.Date(movies$release_date, format = "%
 movies %>% group_by(month) %>% drop_na(month) %>% summarise(count=n()) %>% arrange(desc(month)) %>% ggplot(aes(reorder(month,count),count,fill=month))+geom_bar(stat="identity")+theme(plot.title=element_text(size=14,face="italic",colour="red"),axis.text.x = element_text(angle=90),legend.position="none")+labs(x="Months",y="Total number of movies released",title="Number of Movies Released Per Month")+coord_flip()+geom_label(aes(label=count))
 ```
 
-The horizontal bargraph above shows the number of movies released per month. As one can see the highest number of movies released in a month is January with 5912 movies. This can be due to it being the first month of the new year and also it is during the winter season where a lot of people are indoors. July is seen as the lowest number of movie releases with 2640 movies released and this can be because it is the summer season where a lot of people are occupied with outdoor activities. 
+The horizontal bar graph above shows the number of movies released per month. As one can see, the highest number of movies released in a month is January with 5912 movies. This can be due to it being the first month of the new year, and also it is during the winter season where many people are indoors. July is seen as the lowest number of movie releases, with 2640 movies released. This can be because it is the summer season, where many people are occupied with outdoor activities. 
 
 
 ## Data Preparation
@@ -539,7 +536,7 @@ But first let's convert the id column in the movies dataset and also the movieId
 
 ```{r}
 movies$id <- as.integer(movies$id)
-recc_predicted$movieId <- as.integer(recc_predicted$movieId)
+recc_predicted$movieId <- as.integer(levels(recc_predicted$movieId))
 ```
 
 ```{r}
@@ -603,7 +600,7 @@ recc_predicted2
 Convert movieId2 column in the recc_predicted2 dataframe into an integer.
 
 ```{r}
-recc_predicted2$movieId2 <- as.integer(recc_predicted2$movieId2)
+recc_predicted2$movieId2 <- as.integer(levels(recc_predicted2$movieId2))
 ```
 
 Take first user movieId2 recommendations and merge it with the id in the movies dataset to get the movie titles.
@@ -658,7 +655,7 @@ recc_predicted3
 Convert movieId3 column in the recc_predicted3 dataframe into an integer.
 
 ```{r}
-recc_predicted3$movieId3 <- as.integer(recc_predicted3$movieId3)
+recc_predicted3$movieId3 <- as.integer(levels(recc_predicted3$movieId3))
 ```
 
 
@@ -682,7 +679,7 @@ e
 ```
 
 
-Creation of UBCF Recommender Model and make predictions based on the test dataset the ratings for the given items to obtain error metrics
+Creation of UBCF Recommender Model and make predictions based on the test dataset the ratings for the given items to obtain error metrics.
 
 ```{r}
 Rec.ubcf <- Recommender(getData(e, "train"), "UBCF")
@@ -691,7 +688,7 @@ error.ubcf <- calcPredictionAccuracy(p.ubcf, getData(e, "unknown"))
 ```
 
 
-Creation of IBCF Recommender Model and make predictions based on the test dataset the ratings for the given items to obtain error metrics
+Creation of IBCF Recommender Model and make predictions based on the test dataset the ratings for the given items to obtain error metrics.
 
 ```{r}
 Rec.ibcf <- Recommender(getData(e, "train"), "IBCF")
@@ -700,7 +697,7 @@ error.ibcf<-calcPredictionAccuracy(p.ibcf, getData(e, "unknown"))
 ```
 
 
-Creation of IBCF Recommender Model and make predictions based on the test dataset the ratings for the given items to obtain error metrics
+Creation of SVD Recommender Model and make predictions based on the test dataset the ratings for the given items to obtain error metrics.
 
 ```{r}
 Rec.svd <- Recommender(getData(e, "train"), "SVD")
@@ -711,7 +708,7 @@ error.svd <- calcPredictionAccuracy(p.svd, getData(e, "unknown"))
 
 The Root Mean Squared Error, Mean Squared Error and Mean Absolute Error for the UBCF, IBCF and SVD Model.
 
-RMSE (Root mean squared error) is the standard deviation of the difference between the predicted and real ratings. MSE (Mean Squared Error) is the mean of the squared difference between the predicted and real ratings. RMSE is a root of MSE. MAE (Mean Absolute Error) is the mean of the absolute difference between the real and predicted ratings (Gorakala,2015).
+RMSE (Root mean squared error) is the standard deviation of the difference between the predicted and real ratings. MSE (Mean Squared Error) is the mean of the squared difference between the predicted and real ratings. RMSE is the root of MSE. MAE (Mean Absolute Error) is the mean of the absolute difference between the real and predicted ratings (Gorakala,2015).
 
 ```{r}
 error <- rbind(error.ubcf,error.ibcf,error.svd)
@@ -749,11 +746,11 @@ SVD prediction time seems to shorter than UBCF with IBCF prediction time being t
 
 Plot ROC curve
 
-Some background information is needed.(Gorakala,2015) True Positives (TP) are recommended items that have been purchased. False Positives (FP) are recommended items that haven't been purchased. False Negatives(FN) are not recommended items that have been purchased.True Negatives (TN) are not recommended items that haven't been purchased.
+Some background information is needed. (Gorakala,2015) True Positives (TP) are recommended items that have been purchased. False Positives (FP) are recommended items that haven't been purchased. False Negatives(FN) are not recommended items that have been purchased. True Negatives (TN) are not recommended items that haven't been purchased.
 
-In our situation items purchased refers to the movies rated.
+In our situation, items purchased refers to the movies rated.
 
-ROC curve shows the TPR (True Positive Rate) which is the percentage of purchased items that have been recommended (It's the number of TP (True Positive) divided by the number of purchased items (TP + FN (False Negative))) and FPR (False Positive Rate) which is the percentage of not purchased items that have been recommended (It's the number of FP (False Positive) divided by the number of not purchased items (FP + TN (True Negative)).(Gorakala,2015)
+ROC curve shows the TPR (True Positive Rate), which is the percentage of purchased items that have been recommended (It's the number of TP (True Positive) divided by the number of purchased items (TP + FN (False Negative))) and FPR (False Positive Rate) which is the percentage of not purchased items that have been recommended (It's the number of FP (False Positive) divided by the number of not purchased items (FP + TN (True Negative)). (Gorakala,2015)
 
 ```{r}
 plot(results, annotate=c(1,2,3), legend="topleft")
@@ -764,25 +761,24 @@ The Area Under the Curve (AUC) that is the area under the ROC curve is a good pe
 
 Plot precision/recall
 
-For a precision recall plot, there are two accuracy metrics (Gorakala,2015) we need:
+For a precision-recall plot, there are two accuracy metrics (Gorakala,2015) we need:
 
-1. Precision which is the percentage of recommended items that have been purchased. It's the number of FP (False Positive) divided by the total number of positives (TP (True Positive) + FP).
+1. Precision, which is the percentage of recommended items that have been purchased. It's the number of FP (False Positive) divided by the total number of positives (TP (True Positive) + FP).
 
-2. Recall which is the percentage of purchased items that have been recommended. It's the number of TP (True Positive) divided by the total number of purchases (TP + FN (False Negative)). It's also equal to the True Positive Rate.
+2. Recall, which is the percentage of purchased items that have been recommended. It's the number of TP (True Positive) divided by the total number of purchases (TP + FN (False Negative)). It's also equal to the True Positive Rate.
 
 ```{r}
 plot(results, "prec/rec", annotate=3, legend="topright")
 ```
 
-The graph reflects the tradeoff between precision and recall with the SVD model still being the better model than the UBCF and IBCF models. Depending on what we want to achieve, the choice of parameters might be slightly different.(Gorakala,2015)
+The graph reflects the tradeoff between precision and recall, with the SVD model is still the better model than the UBCF and IBCF models. Depending on what we want to achieve, the choice of parameters might be slightly different. (Gorakala,2015)
 
 
 ## Deployment
 
-Our recommendation engine is very useful for all the stakeholders mentioned in our business success criteria in addition to the organizations that may be interested in this idea. Firstly, current subscribers/users of our platform can test and use a product that will maintain their engagement with our movie services. Providing movie recommendations will enhance their experience and encourage loyalty. Secondly, the developers and deployment staff involved will view this an opportunity to learn more about the users in advanced product releases with further interaction and feedback. Finally, in this competitive environment, organizations will find this use case to further understand that recommendation engines are becoming a necessity to make the right choices for users interacting with their respective platforms. Our model would first be deployed with the appropriate advancements in the UI to showcase the functionalities and models. Furthermore, our development team can critically analyze other extensions of this recommendation engine and integration options with interested parties looking to deploy within their own platforms. 
+Our recommendation engine is beneficial for all the stakeholders mentioned in our business success criteria and the organizations that may be interested in this idea. Firstly, current subscribers/users of our platform can test and use a product to maintain their engagement with our movie services. Providing movie recommendations will enhance their experience and encourage loyalty. Secondly, the developers and deployment staff will view this as an opportunity to learn more about the users in advanced product releases with further interaction and feedback. Finally, in this competitive environment, organizations will find this use case to understand further that recommendation engines are becoming necessary to make the right choices for users interacting with their respective platforms. Our model would first be deployed with the UI's appropriate advancements to showcase the functionalities and models. Furthermore, our development team can critically analyze other extensions of this recommendation engine and integration options with interested parties looking to deploy within their platforms. 
 
-Some other data that needs to be collected include; user preferences and ratings on the movies predicted to them. For example, if we can extend the product even further to allow the user to select movies that they would be most likely to watch from the predicted list and then provide an additional list of recommendations, this application will further enhance the user’s interest and belief in our engines. For maintenance purposes, our model would need to be updated on a monthly basis for bugs and information collection on the predictions.
-
+Other data that needs to be collected include; user preferences and ratings on the movies predicted to them. For example, if we can extend the product even further to allow the user to select movies that they would be most likely to watch from the predicted list and then provide an additional list of recommendations, this application will further enhance the user's interest and belief in our engines. Our model would need to be updated monthly for bugs and information collection on the predictions for maintenance purposes.
 
 ## References
 
